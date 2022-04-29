@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "bx bx-trending-up",
+    "count": "1,995",
+    "title": "Top Points"
+  },
+  {
+    "icon": "bx bx-trending-down",
+    "count": "500",
+    "title": "Bot Points"
+  },
+  {
+    "icon": "bx bx-question-mark",
+    "count": "1,000",
+    "title": "Total Questions"
+  },
+  {
+    "icon": "bx bx-user-circle",
+    "count": "2,001",
+    "title": "Total People"
+  }
+]
