@@ -1,8 +1,8 @@
 import React from 'react'
 import StatusCard from '../components/card/statusCard'
 import statusCard from '../assets/jsondata/statusCard.json'
-import PieChart from '../components/chart/PieChart'
-import BarChart from '../components/chart/BarChart'
+import UserChart from '../components/chart/UserChart'
+import QuestionChart from '../components/chart/QuestionChart'
 const Home = () => {
   return (
     <div className="">
@@ -21,10 +21,10 @@ const Home = () => {
           </div>
                 </div>
                 <div className="col-6">
-                  <PieChart/>
+                  <UserChart/>
                 </div>
       </div>
-      <div><BarChart/></div>
+      <QuestionChart/>
     </div>
   )
 }

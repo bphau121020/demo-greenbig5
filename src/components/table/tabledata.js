@@ -16,7 +16,7 @@ import Paper from '@mui/material/Paper';
 import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import { visuallyHidden } from '@mui/utils';
 
@@ -203,9 +203,9 @@ const EnhancedTableToolbar = (props) => {
         </Typography>
       )}
       {numSelected > 0 ? (
-        <Tooltip title="Delete">
+        <Tooltip title="Edit">
           <IconButton>
-            <DeleteIcon />
+            <EditIcon />
           </IconButton>
         </Tooltip>
       ) : (

@@ -1,9 +1,9 @@
 import React from 'react'
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
-import { Pie } from 'react-chartjs-2'
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Tooltip, Legend, Title,} from 'chart.js'
+import { Bar } from 'react-chartjs-2'
+ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend, Title)
 const labels = ['Openness', 'Conciencetious', 'Extraversion', 'Agreeable', 'Neuroticism'];
-ChartJS.register(ArcElement, Tooltip, Legend);
-const PieChart = () => {
+const UserChart = () => {
   var data = {
     labels,
     datasets: [
@@ -30,17 +30,20 @@ const PieChart = () => {
 var options = {
   maintainAspectRatio: false,
   responsive: true,
-  legend: {
-    labels: {
+  plugins: {
+    legend: {
       position: 'top',
       fontSize: 26,
     },
-  }
-  
+    title: {
+      display: true,
+      text: 'USER DASHBOARD',
+    },
+  },
 }
   return (
     <div>
-    <Pie
+    <Bar
       data={data}
       height={400}
       options={options}
@@ -49,4 +52,4 @@ var options = {
   )
 }
 
-export default PieChart
+export default UserChart

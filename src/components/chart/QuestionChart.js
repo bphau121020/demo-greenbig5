@@ -1,9 +1,9 @@
 import React from 'react'
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Tooltip, Legend,} from 'chart.js'
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Tooltip, Legend, Title,} from 'chart.js'
 import { Bar } from 'react-chartjs-2'
-ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend,)
+ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend, Title)
 const labels = ['Openness', 'Conciencetious', 'Extraversion', 'Agreeable', 'Neuroticism'];
-const BarChart = () => {
+const QuestionChart = () => {
   var data = {
     labels,
     datasets: [
@@ -35,6 +35,10 @@ var options = {
       position: 'top',
       fontSize: 26,
     },
+    title: {
+      display: true,
+      text: 'QUESTIONS DASHBOARD',
+    },
   },
 }
   return (
@@ -48,4 +52,4 @@ var options = {
   )
 }
 
-export default BarChart
+export default QuestionChart
